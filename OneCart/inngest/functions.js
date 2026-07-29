@@ -1,7 +1,7 @@
 import {inngest} from "./client";
 import prisma from "@/lib/prisma";
 
-export const sycUserCreation = inngest.createFunction(
+export const syncUserCreation = inngest.createFunction(
     {id: 'sync-user-create'},
     {event: 'clerk/user.created'},
     async ({event}) => {
